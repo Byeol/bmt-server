@@ -1,0 +1,15 @@
+[[authentication-oauth]]
+== OAuth Authentication
+
+=== Facebook Login
+
+The BMT API uses Facebook for authentication.
+
+==== Redirect users to request Facebook login
+
+[source,http,options="nowrap"]
+----
+GET /api/login HTTP/1.1
+Host: localhost:8080
+
+----

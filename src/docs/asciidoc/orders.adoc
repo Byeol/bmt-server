@@ -1,0 +1,72 @@
+[[resources-orders]]
+== Orders
+
+The Orders resources is used to create and list orders.
+
+
+[[resources-orders-create]]
+=== Creating a order
+
+A `POST` request is used to create a order.
+
+==== Request structure
+
+include::{snippets}/orders-create-example/request-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/orders-create-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/orders-create-example/http-response.adoc[]
+
+
+[[resources-order]]
+== Order
+
+The Order resource is used to retrieve, update, and delete individual orders.
+
+
+[[resources-order-links]]
+=== Links
+
+include::{snippets}/order-get-example/links.adoc[]
+
+
+[[resources-order-retrieve]]
+=== Retrieve a order
+
+A `GET` request will retrieve the details of a order.
+
+==== Response structure
+
+include::{snippets}/order-get-example/response-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/order-get-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/order-get-example/http-response.adoc[]
+
+
+[[resources-order-update]]
+=== Update a order
+
+A `PATCH` request is used to update a order.
+
+==== Request structure
+
+include::{snippets}/order-update-example/request-fields.adoc[]
+
+To leave an attribute of a order unchanged, any of the above may be omitted from the request.
+
+==== Example request
+
+include::{snippets}/order-update-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/order-update-example/http-response.adoc[]

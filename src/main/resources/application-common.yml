@@ -1,0 +1,23 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+  jpa:
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+
+security:
+  oauth2:
+    sso:
+      login-path: /api/login
+
+facebook:
+  client:
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://graph.facebook.com/me

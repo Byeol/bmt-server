@@ -1,0 +1,95 @@
+[[resources-reviews]]
+== Reviews
+
+The Reviews resources is used to create and list reviews.
+
+
+[[resources-reviews-create]]
+=== Creating a review
+
+A `POST` request is used to create a review.
+
+==== Request structure
+
+include::{snippets}/reviews-create-example/request-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/reviews-create-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/reviews-create-example/http-response.adoc[]
+
+
+[[resources-review]]
+== Review
+
+The Review resource is used to retrieve, update, and delete individual reviews.
+
+
+[[resources-review-links]]
+=== Links
+
+include::{snippets}/review-get-example/links.adoc[]
+
+
+[[resources-review-retrieve]]
+=== Retrieve a review
+
+A `GET` request will retrieve the details of a review.
+
+==== Response structure
+
+include::{snippets}/review-get-example/response-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/review-get-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/review-get-example/http-response.adoc[]
+
+
+[[resources-review-update]]
+=== Update a review
+
+A `PATCH` request is used to update a review.
+
+==== Request structure
+
+include::{snippets}/review-update-example/request-fields.adoc[]
+
+To leave an attribute of a review unchanged, any of the above may be omitted from the request.
+
+==== Example request
+
+include::{snippets}/review-update-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/review-update-example/http-response.adoc[]
+
+
+[[resources-review-comments-list]]
+=== Listing comments of the review
+
+A `GET` request will list all of the review's comments.
+
+==== Response structure
+
+include::{snippets}/review-comments-list-example/response-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/review-comments-list-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/review-comments-list-example/http-response.adoc[]
+
+[[resources-review-comments-list-links]]
+==== Links
+
+include::{snippets}/review-comments-list-example/links.adoc[]

@@ -1,0 +1,72 @@
+[[resources-comments]]
+== Comments
+
+The Comments resources is used to create and list comments.
+
+
+[[resources-comments-create]]
+=== Creating a comment
+
+A `POST` request is used to create a comment.
+
+==== Request structure
+
+include::{snippets}/comments-create-example/request-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/comments-create-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/comments-create-example/http-response.adoc[]
+
+
+[[resources-comment]]
+== Comment
+
+The Comment resource is used to retrieve, update, and delete individual comments.
+
+
+[[resources-comment-links]]
+=== Links
+
+include::{snippets}/comment-get-example/links.adoc[]
+
+
+[[resources-comment-retrieve]]
+=== Retrieve a comment
+
+A `GET` request will retrieve the details of a comment.
+
+==== Response structure
+
+include::{snippets}/comment-get-example/response-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/comment-get-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/comment-get-example/http-response.adoc[]
+
+
+[[resources-comment-update]]
+=== Update a comment
+
+A `PATCH` request is used to update a comment.
+
+==== Request structure
+
+include::{snippets}/comment-update-example/request-fields.adoc[]
+
+To leave an attribute of a comment unchanged, any of the above may be omitted from the request.
+
+==== Example request
+
+include::{snippets}/comment-update-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/comment-update-example/http-response.adoc[]

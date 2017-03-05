@@ -1,0 +1,25 @@
+= BMT API Documentation
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+[[overview]]
+= Overview
+
+include::overview.adoc[]
+
+[[authentication]]
+= Authentication
+
+include::authentication.adoc[]
+
+[[resources]]
+= Resources
+
+include::products.adoc[]
+include::orders.adoc[]
+include::reviews.adoc[]
+include::comments.adoc[]

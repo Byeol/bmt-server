@@ -1,0 +1,118 @@
+[[resources-products]]
+== Products
+
+The Products resources is used to create and list products.
+
+
+[[resources-products-list]]
+=== Listing products
+
+A `GET` request will list all of the service's products.
+
+==== Response structure
+
+include::{snippets}/products-list-example/response-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/products-list-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/products-list-example/http-response.adoc[]
+
+[[resources-products-list-links]]
+==== Links
+
+include::{snippets}/products-list-example/links.adoc[]
+
+
+[[resources-products-create]]
+=== Creating a product
+
+A `POST` request is used to create a product.
+
+==== Request structure
+
+include::{snippets}/products-create-example/request-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/products-create-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/products-create-example/http-response.adoc[]
+
+
+[[resources-product]]
+== Product
+
+The Product resource is used to retrieve, update, and delete individual products.
+
+
+[[resources-product-links]]
+=== Links
+
+include::{snippets}/product-get-example/links.adoc[]
+
+
+[[resources-product-retrieve]]
+=== Retrieve a product
+
+A `GET` request will retrieve the details of a product.
+
+==== Response structure
+
+include::{snippets}/product-get-example/response-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/product-get-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/product-get-example/http-response.adoc[]
+
+
+[[resources-product-update]]
+=== Update a product
+
+A `PATCH` request is used to update a product.
+
+==== Request structure
+
+include::{snippets}/product-update-example/request-fields.adoc[]
+
+To leave an attribute of a product unchanged, any of the above may be omitted from the request.
+
+==== Example request
+
+include::{snippets}/product-update-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/product-update-example/http-response.adoc[]
+
+
+[[resources-product-reviews-list]]
+=== Listing reviews of the product
+
+A `GET` request will list all of the product's reviews.
+
+==== Response structure
+
+include::{snippets}/product-reviews-list-example/response-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/product-reviews-list-example/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/product-reviews-list-example/http-response.adoc[]
+
+[[resources-product-reviews-list-links]]
+==== Links
+
+include::{snippets}/product-reviews-list-example/links.adoc[]

@@ -1,0 +1,49 @@
+plugins {
+	id "org.springframework.boot" version "1.5.1.RELEASE"
+	id "org.asciidoctor.convert" version "1.5.3"
+	id "java"
+}
+
+jar {
+	baseName = 'bringmethere'
+	version = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+	compile 'org.springframework.boot:spring-boot-starter-data-rest'
+	compile 'org.springframework.data:spring-data-rest-hal-browser'
+	compile 'org.springframework.boot:spring-boot-starter-security'
+	compile 'org.springframework.security:spring-security-acl'
+	compile 'org.springframework.security.oauth:spring-security-oauth2'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+	compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+	compile 'com.fasterxml.jackson.module:jackson-module-parameter-names'
+	runtime 'org.springframework.boot:spring-boot-devtools'
+	runtime 'com.h2database:h2'
+	compileOnly 'org.projectlombok:lombok'
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+	testCompile 'org.springframework.security:spring-security-test:4.2.2.RELEASE'
+	testCompile 'org.springframework.restdocs:spring-restdocs-mockmvc'
+}
+
+ext {
+	snippetsDir = file('build/generated-snippets')
+}
+
+test {
+	outputs.dir snippetsDir
+}
+
+asciidoctor {
+	attributes 'snippets': snippetsDir
+	inputs.dir snippetsDir
+	dependsOn test
+}
